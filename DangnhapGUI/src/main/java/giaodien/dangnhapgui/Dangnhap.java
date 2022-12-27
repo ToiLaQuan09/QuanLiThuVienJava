@@ -15,8 +15,8 @@ public class Dangnhap extends javax.swing.JFrame {
      * Creates new form Dangnhap
      */
     public Dangnhap() {
-        setTitle("ĐĂNG NHẬP");
         initComponents();
+        setTitle("ĐĂNG NHẬP");
     }
    
     /**

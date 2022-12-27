@@ -61,6 +61,7 @@ public class Sinhvien extends javax.swing.JFrame {
         qlSV.addSinhVien(sv);
         DefaultTableModel model = (DefaultTableModel) qliSVTable.getModel();
         model.addRow(new Object[]{MaSV, TenSV, lop, khoa, NgayVao, ThoiGian});
+        qliSVTable.setEnabled(false);
     }
 
     /**
@@ -186,12 +187,13 @@ public class Sinhvien extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(256, 256, 256)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(132, 132, 132)
                         .addComponent(jButton1)))
                 .addContainerGap(58, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(261, 261, 261))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

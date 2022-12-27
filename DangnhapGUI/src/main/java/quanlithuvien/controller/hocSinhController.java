@@ -33,4 +33,6 @@ public class hocSinhController {
     public void addSinhVien(VaoRa sv){
         listSinhVien.add(sv);
     }
+    
+    
 }
