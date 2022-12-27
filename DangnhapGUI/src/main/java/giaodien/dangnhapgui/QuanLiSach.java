@@ -262,8 +262,8 @@ public class QuanLiSach extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -351,7 +351,7 @@ public class QuanLiSach extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel model = (DefaultTableModel) qliSachTable.getModel();
-        int Row = Integer.valueOf(Dong.getText());
+        int Row = Integer.parseInt(Dong.getText());
         String id = String.valueOf(qliSachTable.getValueAt(Row - 1, 0));
         String name = String.valueOf(qliSachTable.getValueAt(Row - 1, 1));
         String tacGia = String.valueOf(qliSachTable.getValueAt(Row - 1, 2));

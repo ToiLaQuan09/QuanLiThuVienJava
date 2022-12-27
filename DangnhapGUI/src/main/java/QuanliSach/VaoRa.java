@@ -19,7 +19,10 @@ public class VaoRa {
     public VaoRa(){
         
     }
-
+    
+    public VaoRa(String maSV){
+        this.maSV = maSV;
+    }
     public VaoRa(String maSV, String tenSV, String lop, String khoa, String ngayVao, String thoiGian) {
         this.maSV = maSV;
         this.tenSV = tenSV;

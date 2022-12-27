@@ -34,5 +34,12 @@ public class hocSinhController {
         listSinhVien.add(sv);
     }
     
+    public VaoRa layThongTinSV(String maSV){
+        VaoRa sinhVien = new VaoRa(maSV);
+        if(!listSinhVien.contains(sinhVien)) return null;
+        
+        sinhVien = listSinhVien.get(listSinhVien.indexOf(sinhVien));
+        return sinhVien;
+    }
     
 }

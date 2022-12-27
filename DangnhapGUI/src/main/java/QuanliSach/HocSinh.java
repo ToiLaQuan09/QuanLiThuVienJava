@@ -106,8 +106,4 @@ public class HocSinh {
         this.soLuong = soLuong;
     }
 
-    
-
-    
-    
 }
